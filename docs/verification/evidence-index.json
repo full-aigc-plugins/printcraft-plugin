@@ -138,6 +138,8 @@
     "docs/verification/model-natural-final.jsonl": "e832520e866d58325f13c6ad9669ed3e5c5043b9d50d3125f5f01ac8dee8c069",
     "docs/verification/model-natural-unguided.jsonl": "bb99782a6dd736e3041cd96586409388453d2dbc1f263c81e68c4b1648cf444c",
     "docs/verification/model-pdf-current.jsonl": "bbd01efb7a394e83a21f7bbaf761be776f5e38fd769890502b9ae01f7d73a551",
+    "docs/verification/native-platform-collection.json": "c97166b5587bf4ac08ad4563abe9aeb47c5c4598ff32b47969315ff92b517db8",
+    "docs/verification/native-platforms-2026-10-08.md": "09f946f3e1d128811d3d92c7665e1894bddad7d6a29115f407132ad0eb7b6882",
     "docs/verification/plugin-read-dev3.json": "9092718f06cef83b293e9f9548bb4b09d173e4b093e4d3cf7a909f836fdc697b",
     "docs/verification/plugin-read.json": "6cb123398a9cc61b37161cad947239dc8e187262d4b962861d4d0f0aafe7adb8",
     "docs/verification/release-2026-10-08.md": "72a95d981bf70bb3c032502e264c13e70bbdd4a6a8cb074a4a3de732cb929fcf",
@@ -183,10 +185,11 @@
     "openspec/changes/harden-printcraft-plugin-delivery/specs/host-distribution/spec.md": "b55ab6d156873cd7ba304b3d4ac6279729b7477fe05fe44af40dfe2d89cae787",
     "openspec/changes/harden-printcraft-plugin-delivery/specs/host-orchestration/spec.md": "00beaa94f0be4353c7290c96c9508580a480ccf4cd9c444bdf61ea9d1762448d",
     "openspec/changes/harden-printcraft-plugin-delivery/specs/plugin-provenance/spec.md": "dd5c1afa7dbca990dfdfdf50e1574c089fadae83ec0052533bdcadf4030dc973",
-    "openspec/changes/harden-printcraft-plugin-delivery/tasks.md": "325e33fcbe2f310016598c76a1ae8e97d777f1d81f83265a431cda92e2625906",
+    "openspec/changes/harden-printcraft-plugin-delivery/tasks.md": "bd76497565400305f67bf1e3b5d33b732623595048582e7bb503e81c980abf49",
     "openspec/changes/harden-printcraft-plugin-delivery/verification.md": "451606592c8b6cb709942e8593441a42f8b215fd581a6e4a5d6fcd0b3c79a8ee",
-    "project-status.json": "6b47f8682c8404f27b0d89923344277c7853864929fc220294ba6e8e3284552e",
-    "source-release.lock.json": "b9db512f961d6c9dbe4f846576add8c3291c522a76cc17882639d13021fad667"
+    "project-status.json": "480f29f44dab07820dea426c5cf921aca490b11653335c16654cb78f08c99e0c",
+    "source-release.lock.json": "b9db512f961d6c9dbe4f846576add8c3291c522a76cc17882639d13021fad667",
+    ".gitattributes": "f2b55394d9e9b8cd8aa7eb77433b0c580bbcecee8b31cbfb82b262e02aa500ec"
   },
   "layers": {
     "localTests": {
@@ -226,7 +229,17 @@
     },
     "sameMachinePortableDelivery": "UPSTREAM_PASS_ONLY",
     "mobileDevice": "NOT_RUN",
-    "crossMachine": "NOT_RUN"
+    "crossMachine": "NOT_RUN",
+    "nativePlatforms": {
+      "status": "PASS_SCOPED_NATIVE_DIRECT",
+      "ciRunId": 37772042337,
+      "sourceCommit": "bad64e181e1b6b4e8d60e10cdb7623b6d2710d74",
+      "platforms": 5,
+      "scenarios": 30,
+      "skillInstaller": "DARWIN_ARM64_ONLY_NOT_EXTENDED",
+      "chineseOcr": "UNSUPPORTED_BY_PINNED_NATIVE",
+      "mobileDelivery": "NOT_RUN"
+    }
   },
   "openTasks": [
     "5.6"
@@ -267,5 +280,5 @@
     "removed": []
   },
   "unchangedResourceEvidenceReuse": "dev.3 base/isolated tests, native scenarios, public cross-plugin entry, host discovery and model PDF were re-executed; unchanged bootstrap/CLI/service evidence retains original scope. Old dev.2 model artifacts are historical.",
-  "publicationDelta": "Release metadata, host adapters and author tests may change; distributed execution resources and prior scoped native/model artifacts remain digest-bound. Public installation is recorded separately."
+  "publicationDelta": "Published dev.5 skill and harness files unchanged. Author native-platform/English-OCR tests added after release; immutable CI commits and archives bind these scoped results. New main documentation does not change distributed resources."
 }
