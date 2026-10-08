@@ -1,23 +1,21 @@
 {
   "domain": "printcraft",
   "version": "0.1.0-dev.5",
-  "status": "LOCAL_IMPLEMENTED_EXTERNAL_GATES_OPEN",
-  "gitRepository": "INITIALIZED_PUBLIC_REMOTE_RELEASE_PENDING",
+  "status": "PRERELEASE_PUBLISHED_EXTERNAL_GATES_OPEN",
+  "gitRepository": "PUBLIC_REMOTE_MAIN_TRACKED",
   "specification": "OPEN_SPEC_IMPLEMENTED_LOCAL_VERIFY_PASS_NOT_ARCHIVED",
   "nativeInstallation": "PASS_MACOS_ARM64_PINNED_0_2_1",
-  "hostDiscovery": "PASS_CODEX_0_153_4_DEV_3",
-  "modelDispatch": "PASS_GPT_5_6_SOL_DEV_3_SCOPED_CASES",
+  "hostDiscovery": "PASS_CODEX_0_147_0_PUBLIC_DEV_5",
+  "modelDispatch": "PASS_GPT_5_6_SOL_PUBLIC_DEV_5_SCOPED_CASES",
   "creativeAcceptance": "PASS_ORIGINAL_PDF_FIXTURES_ONLY",
-  "published": false,
+  "published": true,
   "openspecChange": "harden-printcraft-plugin-delivery",
-  "tasksCompleted": 21,
+  "tasksCompleted": 23,
   "tasksTotal": 24,
   "openTasks": [
-    "5.4",
-    "5.5",
     "5.6"
   ],
-  "ci": "NOT_RUN",
+  "ci": "PASS_4_PACKAGE_JOBS_ON_RELEASE_COMMIT",
   "otherPlatforms": "BLOCKED_BEFORE_NATIVE_EXECUTION",
   "chineseOcr": "UNSUPPORTED_BY_PINNED_NATIVE",
   "crossPlugin": "PASS_MODEL_HANDOFF_SOURCE_NATIVE_FLOW_MOBILE_NOT_RUN",
@@ -25,7 +23,12 @@
     "passed": 15,
     "failed": 0
   },
-  "independentCheckout": "PASS_DEV_3",
+  "independentCheckout": "PASS_PUBLISHED_DEV_5_RESOURCE_DIGESTS",
   "repository": "https://github.com/full-aigc-plugins/printcraft-plugin",
-  "sourceRelease": "PASS_REMOTE_TAG_RELEASE_ARCHIVE_AND_66_FILES"
+  "sourceRelease": "PASS_REMOTE_TAG_RELEASE_ARCHIVE_AND_66_FILES",
+  "releaseTag": "v0.1.0-dev.5",
+  "releaseCommit": "1f8b259f162c172ab659c5746f6d040edfa1b8d2",
+  "releaseStatus": "PRERELEASE",
+  "ciRunId": 37769324105,
+  "marketplaceCommit": "f41f0adcf017e5753bcbc366b18c3855b2ac1177"
 }

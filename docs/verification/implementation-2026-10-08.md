@@ -1,5 +1,7 @@
 # PrintCraft 插件实施验收（2026-10-08）
 
+> 以下为开发阶段历史验收记录。最新 dev.5 发行身份、任务状态和当前宿主证据以 [发布验收记录](release-2026-10-08.md) 为准；历史版本/命令不改写。
+
 候选 0.1.0-dev.3；OpenSpec change: harden-printcraft-plugin-delivery。**21/24 项任务完成**；正式身份/发布与最终归档仍开放。
 
 ## 实现
