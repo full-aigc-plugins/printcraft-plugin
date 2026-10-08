@@ -44,3 +44,15 @@ class ReleaseHostManifests(unittest.TestCase):
                 root=Path(t)/'plugin';shutil.copytree(ROOT,root,ignore=shutil.ignore_patterns('__pycache__','.DS_Store','.git'))
                 path=root/relative;data=json.loads(path.read_text());data['version']='9.9.9';path.write_text(json.dumps(data))
                 with self.assertRaisesRegex(ValueError,'host_manifest_drift'):load('validate_package',root).validate()
+
+class OptionalOcrContractCompatibility(unittest.TestCase):
+    def test_known_optional_ocr_contracts_extend_core_without_rejecting_old(self):
+        m=load('check_update')
+        core={'execution':'printcraft.execution/1','verification':'printcraft.verification/1'}
+        def manifest(contracts):return {'extensions':{'org.full-aigc.printcraft':{'contracts':contracts}}}
+        m.validate_contracts(manifest(core))
+        current=dict(core,ocr='printcraft.ocr/1',ocrBackend='printcraft.ocr-backend/1')
+        m.validate_contracts(manifest(current))
+        for key,value in [('execution','printcraft.execution/2'),('ocr','printcraft.ocr/2'),('unknown','x')]:
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'incompatible'):
+                m.validate_contracts(manifest(dict(current,**{key:value})))

@@ -64,3 +64,7 @@ flowchart LR
 先修来源和 manifest 拒绝测试，随后增加本地白名单和保护性同步；上游协议完成后接 Harness。生成目标宿主包、授权隔离安装、真实模型与 PDF 场景验收、核验正式来源后才进入授权发布。旧候选不强制覆盖，回退仅替换可兼容程序包且保留任务数据。
 
 本次只记录未来步骤；未实现任务不勾选，不同步主规格、不归档。
+
+### 显式外部中文 OCR 后端的来源升级
+
+用户已授权 Tesseract 可选后端。插件从新的不可变技能源发行同步 ocr.py 与简繁中文使用契约，保持原生 0.2.1、不安装外部依赖、不透明回退。锁记录新技能源 tag/commit/suite/全部文件摘要，本地 harness 保留。新增 printcraft.ocr/1、printcraft.ocr-backend/1 与 execution/verification 分开。真实中文证据只证明指定 Tesseract/模型/macOS arm64 组合，不追认原生中文支持或手机验收；旧 dev.5 制品保持不变。

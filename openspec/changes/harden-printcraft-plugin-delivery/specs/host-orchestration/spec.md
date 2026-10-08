@@ -39,3 +39,15 @@
 #### Scenario: 新增外部副作用
 - **WHEN** 输出 PDF 任务变为真实打印或覆盖受保护原件
 - **THEN** 执行前说明新增影响并取得授权，不将先前导出授权视为通用授权。
+
+### Requirement: HO-04 显式外部 OCR 薄适配
+
+系统 SHALL 将 ocr 意图路由至 printcraft-use，公开 `harness.py ocr diagnose/run` 原样委托包内 ocr.py，不复制身份或识别逻辑；show 支持 printcraft.ocr/1 的合法状态、runId、后端身份及产物。该协议不能声称 VERIFIED 或 completeAcceptance=true。
+
+#### Scenario: 外部 OCR 未知结果
+- **WHEN** show 消费外部 OCR 的 UNKNOWN/FAILED_OR_PARTIAL 回执
+- **THEN** 展示只读查看与产物对账，不调用不兼容的 commands.py reconcile，不自动重放。
+
+#### Scenario: 兼容升级
+- **WHEN** dev.5 的核心 execution/verification 契约升级到带已知可选 ocr/ocrBackend 契约的 dev.6
+- **THEN** 保持旧任务数据，已知可选协议允许增量扩展；未知字段/协议或核心版本变化拒绝升级，不自动迁移。
