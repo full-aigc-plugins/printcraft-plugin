@@ -18,7 +18,7 @@
   "ci": "PASS_4_PACKAGE_JOBS_ON_RELEASE_COMMIT",
   "otherPlatforms": "PASS_5_PLATFORM_NATIVE_DIRECT_SKILL_INSTALLER_DARWIN_ARM64_ONLY",
   "chineseOcr": "UNSUPPORTED_BY_PINNED_NATIVE",
-  "crossPlugin": "PASS_MODEL_HANDOFF_SOURCE_NATIVE_FLOW_MOBILE_NOT_RUN",
+  "crossPlugin": "PASS_LOCAL_PRODUCER_AND_CROSS_MACHINE_PACKAGE_NATIVE_MOBILE_NOT_RUN",
   "localTests": {
     "passed": 15,
     "failed": 0
@@ -32,5 +32,8 @@
   "ciRunId": 37769324105,
   "marketplaceCommit": "f41f0adcf017e5753bcbc366b18c3855b2ac1177",
   "englishOcr": "PASS_PINNED_MODELS_ORIGINAL_SCAN_5_PLATFORMS",
-  "nativePlatformCiRunId": 37772042337
+  "nativePlatformCiRunId": 37772042337,
+  "crossMachineDelivery": "PASS_MACOS_SENDER_LINUX_X64_MAC_INTEL_RECEIVERS",
+  "crossMachineCiRunId": 37773443950,
+  "mobileDelivery": "DEVICE_AUTHORIZATION_REQUIRED_NOT_RUN"
 }

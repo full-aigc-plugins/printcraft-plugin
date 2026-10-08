@@ -87,10 +87,13 @@
     ".codex-plugin/plugin.json": "38c43dec7227a89ec2153ef6ae869fca658336e8ed23e5feaf1600fec1fc494c"
   },
   "evidenceSha256": {
+    ".gitattributes": "f2b55394d9e9b8cd8aa7eb77433b0c580bbcecee8b31cbfb82b262e02aa500ec",
     ".github/workflows/verify.yml": "9645a7073f3f75ddfef02d558a96e6277d9a9dc25152328fb34589ec09fd4504",
     ".zcode-plugin/plugin.json": "8e9707c7c89100bc3be4f890fa492835277c7a64a8e24a1b92f087970a47023b",
     "README.md": "0fadc81d4b2bdd598ab5e81a6d005972afbd744003b4de03df223d95568a84aa",
     "README.zh-CN.md": "80e6ca288a6486bdfc5dec40887f7c1b6c6b958928051850034738c035587d73",
+    "docs/verification/cross-machine-2026-10-08.md": "3728d33aa0a7cf3d3f7766ce744f1137cc4728758535c00bc44a1f92ae472532",
+    "docs/verification/cross-machine-collection.json": "50ed82f009fa6e280d35606dd0c0141471c3616e36f1ea1562bc74c2a89ec57d",
     "docs/verification/handoff-fixture-failure.log": "12627f9a7570f763cde00e06c3fc7c4f8684b50095009aa6ac4ffa2beb91b7e1",
     "docs/verification/handoff-install.json": "1029fc13a19e4e145bc45ac6194445207602da579135903262f3f4127a132e0e",
     "docs/verification/handoff-local-tests.log": "612eed3c8c203a12afd708b98fb82275c573ce16d242d10b9445699b84299db3",
@@ -98,6 +101,7 @@
     "docs/verification/isolated-handoff-dev3.json": "91b6d1b7a81e3ce6271a36c38de7b8d6209871ed478cbb33236eaff332f4a4b0",
     "docs/verification/isolated-repository.json": "c01214a23ec14e3b560d159baf1804d75b500d4b51b59b3da2263c9d964fbc02",
     "docs/verification/local-tests.log": "fe5987485cb0de84390f69391347ab040f1aeaf73f6f52c095e4a3085d75ceb1",
+    "docs/verification/mobile-device-status.json": "423517c809e32df0736c4c6ee3f4c5fde37e3442eb93cf079ae548e1c12193f8",
     "docs/verification/model-artifacts/archived-verification-receipt.json": "7310940734fafad480db1ef1b64064b340df44ec1116670c8b3fe2efa7a1e9d0",
     "docs/verification/model-artifacts/archived-verification-request.json": "87d0bce0a811b855b13634cafd4e71627e7855e0aa35be15616bf31b719c9f39",
     "docs/verification/model-artifacts/combined-verification.json": "f08a448fa30081d21bb91953d6762bea68119f1e858b00c5f0b21492ff1bf68c",
@@ -185,11 +189,11 @@
     "openspec/changes/harden-printcraft-plugin-delivery/specs/host-distribution/spec.md": "b55ab6d156873cd7ba304b3d4ac6279729b7477fe05fe44af40dfe2d89cae787",
     "openspec/changes/harden-printcraft-plugin-delivery/specs/host-orchestration/spec.md": "00beaa94f0be4353c7290c96c9508580a480ccf4cd9c444bdf61ea9d1762448d",
     "openspec/changes/harden-printcraft-plugin-delivery/specs/plugin-provenance/spec.md": "dd5c1afa7dbca990dfdfdf50e1574c089fadae83ec0052533bdcadf4030dc973",
-    "openspec/changes/harden-printcraft-plugin-delivery/tasks.md": "bd76497565400305f67bf1e3b5d33b732623595048582e7bb503e81c980abf49",
+    "openspec/changes/harden-printcraft-plugin-delivery/tasks.md": "b086f7e0f0be31dd9feb3e7ccd4f14193e71c067c3884717d4eb8660791f6e5b",
     "openspec/changes/harden-printcraft-plugin-delivery/verification.md": "451606592c8b6cb709942e8593441a42f8b215fd581a6e4a5d6fcd0b3c79a8ee",
-    "project-status.json": "480f29f44dab07820dea426c5cf921aca490b11653335c16654cb78f08c99e0c",
+    "project-status.json": "ee0626cef29088505780a9b22e626043a322656b4e4440929dbafa9699022f3c",
     "source-release.lock.json": "b9db512f961d6c9dbe4f846576add8c3291c522a76cc17882639d13021fad667",
-    ".gitattributes": "f2b55394d9e9b8cd8aa7eb77433b0c580bbcecee8b31cbfb82b262e02aa500ec"
+    "docs/verification/openspec-validation-2026-10-08.json": "b88e640a39ac0d0beb05e719f42140720f42578dd082ece31d1ecb0921ddbf39"
   },
   "layers": {
     "localTests": {
@@ -229,7 +233,21 @@
     },
     "sameMachinePortableDelivery": "UPSTREAM_PASS_ONLY",
     "mobileDevice": "NOT_RUN",
-    "crossMachine": "NOT_RUN",
+    "crossMachine": {
+      "status": "PASS_SCOPED_CROSS_MACHINE",
+      "ciRunId": 37773443950,
+      "sourceCommit": "cb90b21920e04fbe0f65be3d0fe8619cbe33e1da",
+      "transportSha256": "2ff3a91f5f649b94bb3958933435e937cac5fc9941fe1f6b96bc04c3b6294089",
+      "files": 59,
+      "receivers": [
+        "linux-x86_64",
+        "darwin-x86_64"
+      ],
+      "consumerCommit": "4ff30a88bbdc0c268dc17d7cddb7f3aed77544e8",
+      "mobileDevice": "DEVICE_AUTHORIZATION_REQUIRED_NOT_RUN",
+      "producerReexecution": "NOT_RUN",
+      "visualReview": "NOT_RUN"
+    },
     "nativePlatforms": {
       "status": "PASS_SCOPED_NATIVE_DIRECT",
       "ciRunId": 37772042337,
@@ -280,5 +298,5 @@
     "removed": []
   },
   "unchangedResourceEvidenceReuse": "dev.3 base/isolated tests, native scenarios, public cross-plugin entry, host discovery and model PDF were re-executed; unchanged bootstrap/CLI/service evidence retains original scope. Old dev.2 model artifacts are historical.",
-  "publicationDelta": "Published dev.5 skill and harness files unchanged. Author native-platform/English-OCR tests added after release; immutable CI commits and archives bind these scoped results. New main documentation does not change distributed resources."
+  "publicationDelta": "Published dev.5 distributed skill and harness files unchanged; later author tests/CI evidence bind immutable native, English-OCR and cross-machine commits. Phone/tablet and native Chinese OCR gates remain open."
 }
