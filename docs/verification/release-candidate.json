@@ -1,0 +1,17 @@
+{
+  "currentVersion": "0.1.0-dev.5",
+  "releaseTag": "v0.1.0-dev.5",
+  "releaseCommit": null,
+  "releaseStatus": "BLOCKED",
+  "distributionStatus": "PREPARING_PRERELEASE",
+  "blockingProductionGates": [
+    "Chinese OCR unsupported by pinned native",
+    "Other native platforms not executed",
+    "Mobile-device/cross-machine delivery not run"
+  ],
+  "hostSupport": {
+    "Codex": "PUBLIC_INSTALL_PENDING",
+    "ZCode": "NOT_RUN",
+    "Kimi": "NOT_RUN"
+  }
+}
