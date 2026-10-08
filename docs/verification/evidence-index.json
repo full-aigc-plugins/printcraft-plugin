@@ -106,6 +106,12 @@
     "README.zh-CN.md": "97417a112c9ca206eb64ec06e63a2c5cb63ceaf763386ccf1d97d2495a2580d1",
     "docs/verification/cross-machine-2026-10-08.md": "3728d33aa0a7cf3d3f7766ce744f1137cc4728758535c00bc44a1f92ae472532",
     "docs/verification/cross-machine-collection.json": "50ed82f009fa6e280d35606dd0c0141471c3616e36f1ea1562bc74c2a89ec57d",
+    "docs/verification/dev6-host/collection.json": "fec6762f64d929617750992bfafed0152e83ccccca758db45e7218eb6c330f02",
+    "docs/verification/dev6-host/plugin-read.json": "23a8b3de2a7f677af061a662078126bfc4004a836a8c797787dd58a7f9b5664d",
+    "docs/verification/dev6-host/public-host-dev6.zip": "549a5be5de1f66010acd1673bd0a2c27e55959b7b8f3a346edefb796bc352847",
+    "docs/verification/dev6-host/public-verification.json": "16ae66e71e2f675341a5fb845612cd9c6b713ac9821004dd75197dfc9b9d48a4",
+    "docs/verification/dev6-host/report.json": "414e09a98c27c53c773771d0b2edec15dde48f4dc5810272997aecd47bb31a82",
+    "docs/verification/dev6-host/update-verification.json": "44616a412ad1bdf3fc56959a66dfd684aa348ba60d39cb01ebd0d375c5890d99",
     "docs/verification/external-ocr/collection.json": "cefab5a4f19f70ca7c98f3c9a6d36eb889ca19bfdd95e505b6aa9650005143fd",
     "docs/verification/external-ocr/harness-real.zip": "bf1f40e192a21d194667a9ee796ede5130ea464dc7da14f16ed749f7f0d67a36",
     "docs/verification/external-ocr/harness-show.json": "19eab104f46b260f85fac0b6eca6752a0b960cc962e5c5ffc3cc60a86a3d400b",
@@ -164,12 +170,14 @@
     "docs/verification/model-pdf-current.jsonl": "bbd01efb7a394e83a21f7bbaf761be776f5e38fd769890502b9ae01f7d73a551",
     "docs/verification/native-platform-collection.json": "c97166b5587bf4ac08ad4563abe9aeb47c5c4598ff32b47969315ff92b517db8",
     "docs/verification/native-platforms-2026-10-08.md": "09f946f3e1d128811d3d92c7665e1894bddad7d6a29115f407132ad0eb7b6882",
+    "docs/verification/openspec-dev6-strict.json": "d84c620e40c4ca57e178097e0fc90bd3fec0a0b85f4cbef4ca5a5f6adf4f7218",
     "docs/verification/openspec-validation-2026-10-08.json": "b88e640a39ac0d0beb05e719f42140720f42578dd082ece31d1ecb0921ddbf39",
     "docs/verification/plugin-read-dev3.json": "9092718f06cef83b293e9f9548bb4b09d173e4b093e4d3cf7a909f836fdc697b",
     "docs/verification/plugin-read.json": "6cb123398a9cc61b37161cad947239dc8e187262d4b962861d4d0f0aafe7adb8",
+    "docs/verification/public-host-dev6-2026-10-08.md": "f0cd29d54b9970472e7bd1676c55a39d842f7b7a2345fe188f124a832710e557",
     "docs/verification/release-2026-10-08.md": "72a95d981bf70bb3c032502e264c13e70bbdd4a6a8cb074a4a3de732cb929fcf",
     "docs/verification/release-bootstrap-install.json": "2f090964c161f4aa3ad1cd8fad11c9710f2ba65989c7db52e08311deff739bf6",
-    "docs/verification/release-candidate.json": "f472f8f3bf9c60319d618d021f40ca22f750dc5119462e6b073c25995743c94e",
+    "docs/verification/release-candidate.json": "b0334f6ad26572cfd0c2d752d683cdef5178d72a50d851ff829db941e783c48d",
     "docs/verification/release-current-model-dev5-results.json": "1dd713e90bcb33aeb154169f108883b0035f51fdd91d734eab035075f73e5905",
     "docs/verification/release-dev5-artifacts/archive-combined-verification.json": "2c330aa32a10ca352f72b79e6c4a62144d226016a1dedcdba7daca717206014a",
     "docs/verification/release-dev5-artifacts/archive-verification-receipt.json": "55ca348a36ea93db72dcd3b4a9f7782c33f49ad2420630cf264e836b6909a5e5",
@@ -200,6 +208,7 @@
     "docs/verification/release-public-marketplace.json": "ae637f9c2cdd22d55441be9d5df2f77552f7efb900fb8a15cf37af15bd2b4113",
     "docs/verification/release-public-update-verification.json": "388a76144c74c96e3858a1445ad2ae22819ef2e6c5a78fa890459830c3d58d43",
     "docs/verification/release-source-lock-red.log": "f0719c055a6b6a17cd60634b349e0dda1ca257876dc414ddaef6f7eb7612e991",
+    "docs/verification/remote-plugin-dev6.json": "bd3c95868323d142421a4a56e57eaf2a95dfb432bff2ade51e17a726de41bd8b",
     "docs/verification/remote-plugin-release.json": "7571fe0c2417a5b954453e03c32cb1c36e02c11b80e30154c859874c0420cc22",
     "docs/verification/remote-source-dev6.json": "70c0354e651170b86d89a6de0424a931b568b5fc49af907c5e1637f10ac9fc17",
     "docs/verification/remote-source-release.json": "030073cdb5509021ff2cd3124952bf8d4e4c1c45015053cbc445c2c854076271",
@@ -212,16 +221,17 @@
     "openspec/changes/harden-printcraft-plugin-delivery/specs/host-orchestration/spec.md": "051791382a605b767fbef6c607fbaa65198dac77be6f29d122093b99a451b093",
     "openspec/changes/harden-printcraft-plugin-delivery/specs/plugin-provenance/spec.md": "dd5c1afa7dbca990dfdfdf50e1574c089fadae83ec0052533bdcadf4030dc973",
     "openspec/changes/harden-printcraft-plugin-delivery/tasks.md": "6b7eb04e2965bcbcb6101a687b67b2109ab82568440cfdab633a409cdb49accc",
-    "openspec/changes/harden-printcraft-plugin-delivery/verification.md": "451606592c8b6cb709942e8593441a42f8b215fd581a6e4a5d6fcd0b3c79a8ee",
-    "project-status.json": "d5b359609f8b708af123897174ea65a7131dedccdfa164060c7ec3d98dfbbe41",
-    "source-release.lock.json": "2359c2e452bb01f716861e387a7767031bfb3bcef870d4a5f6bc0ed4495f5049"
+    "openspec/changes/harden-printcraft-plugin-delivery/verification.md": "10ac0fac684c5a7ba67b3088e4f7add4e6ea148e529f68c8215ed10105ad8134",
+    "project-status.json": "ee8ccf3fb777e683e7d97875842b849b3b165eba5df2169d0b23b8931235bf35",
+    "source-release.lock.json": "2359c2e452bb01f716861e387a7767031bfb3bcef870d4a5f6bc0ed4495f5049",
+    "docs/verification/external-ocr/independent-public-tag-tests-18.log": "a7c5e34ede201bd3c88f824ce31d39489965b5e4a6d75fe6985e7f8da6e33d16"
   },
   "layers": {
     "localTests": {
       "status": "PASS",
       "count": 18
     },
-    "independentCheckout": "PASS_DEV_3",
+    "independentCheckout": "PASS_DEV_6_PUBLIC_TAG_INDEPENDENT_18_TESTS",
     "nativeRuntime": {
       "status": "PASS",
       "version": "printcraft-cli 0.2.1",
@@ -229,28 +239,30 @@
       "binarySha256": "b7783b596870ed5a326f29456d4647382d2e1e4d7b7ffe75ded192cd15b86995"
     },
     "host": {
-      "status": "HISTORICAL_DEV_5_ONLY",
+      "status": "PASS_SCOPED_PUBLIC_DEV_6",
       "version": "codex-cli 0.147.0",
-      "packageVersion": "0.1.0-dev.5",
-      "skillDiscoveryCount": 7
+      "packageVersion": "0.1.0-dev.6",
+      "skillDiscoveryCount": 7,
+      "report": "docs/verification/dev6-host/report.json"
     },
     "model": {
-      "status": "HISTORICAL_DEV_5_ONLY",
+      "status": "PASS_SCOPED_DEV_6_WITH_SKILL_CONTEXT_WARNING",
       "model": "gpt-5.6-sol",
-      "packageVersion": "0.1.0-dev.5",
-      "cases": 2
+      "packageVersion": "0.1.0-dev.6",
+      "cases": 2,
+      "report": "docs/verification/dev6-host/report.json"
     },
     "visual": "PASS_ORIGINAL_FIXTURES_CODEX_IMAGE_INSPECTION",
     "otherPlatforms": "PASS_SCOPED_5_NATIVE_PLATFORMS_SKILL_INSTALLER_DARWIN_ARM64_ONLY",
     "chineseOCR": "UNSUPPORTED_BY_PINNED_NATIVE_ACTUAL_ZH_REQUEST_REFUSED",
     "crossPluginRealProducer": "PASS_PUBLIC_ENTRY_LOCAL_NATIVE_MOBILE_NOT_RUN",
-    "publication": "DEV_6_SOURCE_PUBLISHED_PLUGIN_PENDING",
+    "publication": "DEV_6_SOURCE_AND_PLUGIN_PRERELEASES_PUBLISHED",
     "ci": {
       "status": "PASS",
-      "releaseCommit": "1f8b259f162c172ab659c5746f6d040edfa1b8d2",
-      "runId": 37769324105,
+      "releaseCommit": "8b1091dced36b11c44dcaff108c9394555977831",
+      "runId": 37778840726,
       "jobs": 4,
-      "scope": "package-only; native platform acceptance unchanged"
+      "scope": "release-commit package validation; final evidence commit CI checked separately"
     },
     "sameMachinePortableDelivery": "UPSTREAM_PASS_ONLY",
     "mobileDevice": "NOT_RUN",
@@ -326,5 +338,5 @@
     "removed": []
   },
   "unchangedResourceEvidenceReuse": "dev.3 base/isolated tests, native scenarios, public cross-plugin entry, host discovery and model PDF were re-executed; unchanged bootstrap/CLI/service evidence retains original scope. Old dev.2 model artifacts are historical.",
-  "publicationDelta": "dev.6 adds source-pinned optional OCR and a thin Harness adapter; current plugin OCR native runs bind current resources. Prior dev.5 host/model evidence is historical until separately reverified. Mobile remains NOT_RUN; native Chinese unsupported."
+  "publicationDelta": "dev.6 immutable prereleases published; public market fresh install, controlled-index actual dev.5-to-dev.6 update, seven-skill host read and two installed-model Chinese OCR tasks reverified. Native Chinese unsupported; PDF reading/search limitations and mobile gates remain open."
 }
